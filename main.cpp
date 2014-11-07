@@ -1,4 +1,5 @@
 #include <QApplication>
+#include <unistd.h>
 #include "include/window.h"
 #include "include/console.h"
 

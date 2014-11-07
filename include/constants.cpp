@@ -62,7 +62,7 @@
 
         qreal timeStep = 5.0e-12;     //set the time interval for the simulation
 
-        const qreal scale = 2.0;      //change the graphics size
+        const qreal scale = 1.0;      //change the graphics size
 
         unsigned int beadNumber = 45;
 
