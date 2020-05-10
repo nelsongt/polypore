@@ -588,12 +588,12 @@ QDebug operator<<(QDebug dbg, const aVector3D &vector)
     \sa {Serializing Qt Data Types}
 */
 
-QDataStream &operator<<(QDataStream &stream, const aVector3D &vector)
-{
-    stream << vector.x() << vector.y()
-           << vector.z();
-    return stream;
-}
+//QDataStream &operator<<(QDataStream &stream, const aVector3D &vector)
+//{
+//    stream << qreal(vector.x()) << qreal(vector.y())
+//           << qreal(vector.z());
+//    return stream;
+//}
 
 /*!
     \fn QDataStream &operator>>(QDataStream &stream, aVector3D &vector)
@@ -605,17 +605,17 @@ QDataStream &operator<<(QDataStream &stream, const aVector3D &vector)
     \sa {Serializing Qt Data Types}
 */
 
-QDataStream &operator>>(QDataStream &stream, aVector3D &vector)
-{
-    double x, y, z;
-    stream >> x;
-    stream >> y;
-    stream >> z;
-    vector.setX(qreal(x));
-    vector.setY(qreal(y));
-    vector.setZ(qreal(z));
-    return stream;
-}
+//QDataStream &operator>>(QDataStream &stream, aVector3D &vector)
+//{
+//    double x, y, z;
+//    stream >> x;
+//    stream >> y;
+//    stream >> z;
+//    vector.setX(qreal(x));
+//   vector.setY(qreal(y));
+//    vector.setZ(qreal(z));
+//    return stream;
+//}
 
 #endif // QT_NO_DATASTREAM
 

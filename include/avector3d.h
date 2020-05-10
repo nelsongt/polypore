@@ -57,7 +57,7 @@ class QVector4D;
 
 #ifndef QT_NO_VECTOR3D
 
-class Q_GUI_EXPORT aVector3D
+class aVector3D
 {
 public:
     aVector3D();
@@ -269,12 +269,12 @@ inline QPointF aVector3D::toPointF() const
 }
 
 #ifndef QT_NO_DEBUG_STREAM
-Q_GUI_EXPORT QDebug operator<<(QDebug dbg, const aVector3D &vector);
+QDebug operator<<(QDebug dbg, const aVector3D &vector);
 #endif
 
 #ifndef QT_NO_DATASTREAM
-Q_GUI_EXPORT QDataStream &operator<<(QDataStream &, const aVector3D &);
-Q_GUI_EXPORT QDataStream &operator>>(QDataStream &, aVector3D &);
+//QDataStream &operator<<(QDataStream &, const aVector3D &);
+//QDataStream &operator>>(QDataStream &, aVector3D &);
 #endif
 
 #endif

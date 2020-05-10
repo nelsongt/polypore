@@ -4,12 +4,12 @@
 #
 #-------------------------------------------------
 
-QT       += core gui svg
+QT       += core gui widgets svg
 CONFIG += console
 CONFIG += staticlib
 TARGET = polypore
 #INCLUDEPATH = /home/nelson/qtsdk-2010.04/qt/lib/
-TEMPLATE = app
+TEMPLATE += app
 QMAKE_CXXFLAGS = -O3 -pipe -fomit-frame-pointer
 QMAKE_CFLAGS = -O3 -pipe -fomit-frame-pointer
 #QMAKE_CXXFLAGS_DEBUG += -pg
